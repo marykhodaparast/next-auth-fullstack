@@ -18,3 +18,13 @@ The original code is from [Tutorial Creator's YouTube Channel](https://www.youtu
 - Modify the UI to create my **own custom design**  
 - Add more features like role-based authentication  
 - Implement backend logic using **Node.js** or **Laravel**
+
+# For setting up database with Prisma, run below commands
+- npm install prisma --save-dev
+- npx prisma init --datasource-provider sqlite
+- npx prisma migrate dev --name init
+- npm i @prisma/client
+- npx prisma studio
+- npm i bcrypt
+- npm i --save-dev @types/bcrypt
+

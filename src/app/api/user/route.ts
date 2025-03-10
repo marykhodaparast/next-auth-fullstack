@@ -6,7 +6,7 @@ interface RequestBody {
   email: string;
   password: string;
 }
-
+// This is for creating a user
 export async function POST(request: Request) {
   const body: RequestBody = await request.json();
 
