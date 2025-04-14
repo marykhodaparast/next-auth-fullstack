@@ -1,6 +1,9 @@
 import AppBar from "@/components/AppBar";
 import "./globals.css";
+import { dir } from "i18next";
 import Providers from "@/components/Providers";
+
+const language = "fa";
 
 export const metadata = {
   title: "Next-Auth Tutorial",
@@ -9,7 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang={language} dir={dir(language)}>
       <body>
         <Providers>
           <AppBar />

@@ -4,10 +4,11 @@ import React from "react";
 
 const SigninButton = () => {
   const { data: session } = useSession();
-  console.log(session?.user);
+  //console.log(session?.user);
 
   if (session && session.user) {
     return (
+      //TODO: check if lang is fa use mr-auto, else it is en use ml-auto
       <div className="flex gap-4 ml-auto">
         <p className="text-sky-600">{session.user.name}</p>
         <button onClick={() => signOut()} className="text-red-600">

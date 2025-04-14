@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 const AppBar = () => {
   const { t, ready } = useTranslation("common");
 
-  if (!ready) return null; // یا spinner/loader نشون بده
+  if (!ready) return false; // یا spinner/loader نشون بده
 
   return (
     <header className="flex gap-4 p-4 bg-gradient-to-b from-white to-gray-200 shadow">
