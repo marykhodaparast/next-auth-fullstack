@@ -3,11 +3,11 @@ import { notFound } from "next/navigation";
 import { locales } from "./config";
 
 export default getRequestConfig(async ({ locale }) => {
-    if(!locales.includes(locale as any)) {
-        notFound();
-    }
+  if (!locales.includes(locale as any)) {
+    notFound();
+  }
 
-    return {
-        messages: (await import(`./messages/${locale}.json`)).default,
-    };
+  return {
+    messages: (await import(`./messages/${locale}.json`)).default,
+  };
 });
